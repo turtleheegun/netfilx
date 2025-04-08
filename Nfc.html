@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오.넷.추</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">오늘 볼 넷플릭스 영화는?</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "오늘은 액션. -록키",
+                "오늘은 범죄. -낙원의 밤",
+                "오늘은 로맨스. -트와이라잇",
+                "오늘은 코미디. -트루먼쇼",
+                "오늘은 공포 -겟아웃"
+                "오늘은 스릴러 -살인자ㅇ난감"
+                "오늘은 역사 -1987"
+                "오늘은 SF -메이즈러너"
+                "오늘은 밀리터리 -실미도"
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
